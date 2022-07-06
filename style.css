@@ -305,7 +305,7 @@ body {
   gap: 50px;
 
   position: absolute;
-  width: auto;
+  width: 100%;
   height: 1022px;
   left: 20px;
   top: 180px;
@@ -345,6 +345,7 @@ body {
   justify-content: space-between;
   align-items: center;
   align-self: center;
+  justify-self: center;
 }
 #uploadTitle {
   font-family: "Poppins";
@@ -708,6 +709,7 @@ aside {
     left: 35%;
     width: 580px;
     padding: 0;
+    top: 100px;
   }
   #category .title p {
     font-family: "Poppins";
