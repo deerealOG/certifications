@@ -13,25 +13,7 @@
 html {
   font-size: 16px;
 }
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f37821;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #262262;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #262262;
-}
 body {
   position: absolute;
   overflow-x: hidden;
@@ -92,6 +74,10 @@ body {
   padding-right: 20px;
   padding-left: 10px;
   transition: all 0.7s ease-in;
+}
+#avat {
+  display: flex;
+  align-items: center;
 }
 .menu-wrap {
   position: relative;
@@ -224,7 +210,15 @@ body {
   color: inherit;
   transition: color 0.4s;
 }
+#files {
+  background: #262262;
+  padding: 10px 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
 #userdetails {
+  position: absolute;
+  right: 5%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -247,9 +241,6 @@ body {
 #username {
   padding: 0;
   margin: 0;
-}
-#username p {
-  display: none;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -257,13 +248,15 @@ body {
   line-height: 150%;
   color: #ffffff;
 }
+#username p {
+}
 #logo {
 }
 #logo:hover {
   cursor: pointer;
 }
 #logo img {
-  height: 40px;
+  height: 50px;
 }
 
 #hamburger {
@@ -275,8 +268,40 @@ body {
 .down {
   color: white;
 }
-.caret {
+#dropDownCont {
+  position: fixed;
+  top: 85px;
+  right: 0px;
+  z-index: 100;
+  background: #262262;
+  width: auto;
+  padding: 0px;
+}
+.profileDropdown {
   display: none;
+  padding: 10px 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.profileDropdown li {
+  list-style: none;
+  padding: 10px 24px;
+}
+.profileDropdown a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 600;
+  text-decoration: none;
+}
+.profileDropdown a:hover {
+  color: #f37821;
+}
+.show {
+  display: flex;
 }
 #title {
   font-family: "Poppins";
@@ -294,7 +319,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+#sideNavCont {
+  background: #fff;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 100;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  display: flex;
+}
+.side-navcont {
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  display: none;
+  background: rgba(38, 34, 98, 0.8);
+  padding-bottom: 20px;
+}
+.side-navcont li {
+  padding: 10px;
+  list-style: none;
+  width: 100%;
+  transition: all 0.5s ease-in;
+}
+.side-navcont li:hover {
+  background: #f8c097;
+  cursor: pointer;
+}
+.side-navcont a {
+  text-decoration: none;
+  color: #ffffff;
 }
 #category {
   display: flex;
@@ -345,18 +408,27 @@ body {
   width: 90%;
   padding: 0;
 }
-#upload {
+.upload {
   background: rgba(243, 120, 33, 0.2);
-  height: 270px;
-  width: 280px;
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   align-self: center;
   justify-self: center;
+  padding: 20px;
+  color: #262262;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 150%;
+  gap: 20px;
+  border-style: dotted;
 }
-#uploadTitle {
+.uploadTitle {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -369,17 +441,28 @@ body {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #262262;
   margin-left: 10px;
-  margin-left: 10px;
 }
-.upload {
+.upload-icon {
   align-self: center;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   color: #262262;
+}
+.browseFile {
+  background: #262262;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 150%;
+  cursor: pointer;
 }
 aside {
   display: none;
@@ -595,7 +678,6 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 50px;
 
     position: absolute;
@@ -671,13 +753,6 @@ aside {
     z-index: 10;
   }
 
-  #userdetails {
-    position: absolute;
-    left: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   #username {
     height: auto;
   }
