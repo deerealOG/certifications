@@ -70,13 +70,32 @@
           </ul>
         </menu>
       </span>
+      <input id="toggle" type="checkbox"></input>
+
+<label for="toggle" class="hamburger">
+<div class="top-bun"></div>
+<div class="meat"></div>
+<div class="bottom-bun"></div>
+</label>
+
+<div class="nav">
+<div class="nav-wrapper">
+<nav>
+  <a href="#">Hire Engineer</a><br>
+  <a href="#">Find Job</a><br>
+  <a href="#">Post a Job</a><br>
+  <a href="#">My Profile</a><br>
+  <a href="#"><span class="iconify" data-icon="bx:power-off"></span>Log out</a>
+</nav>
+</div>
+</div>
       <span id="userdetails">
         <span
           class="iconify notification"
           data-icon="clarity:notification-outline-badged"
-          style="color: white; font-size: 30px"
+          style="color: white; font-size: 26px"
         ></span>
-        <span id="username"> Divine Orji </span>
+        <span id="username"> Divine</span>
         <span id="avat">
           <span id="avatar">
             <img src="images/Frame 36709.png" alt="user avatar" />
@@ -84,7 +103,7 @@
           <span
             class="iconify down"
             data-icon="bi:caret-down-fill"
-            style="font-size: 30px"
+            style="font-size: 26px"
           ></span>
         </span>
       </span>
@@ -96,17 +115,7 @@
         <li><a href="">Log out</a></li>
       </ul>
     </div>
-    <aside>
-      <nav id="sideNav">
-        <div id="bigContainer">
-          <span id="about">About Me</span>
-          <span id="expe">Experience</span>
-          <span id="skill">Skills</span>
-          <span id="cert">Certifications</span>
-          <span id="contact">Contact</span>
-        </div>
-      </nav>
-    </aside>
+   
     <main>
       <div id="title">
         Certifications
@@ -176,7 +185,8 @@
               </ul>
             </span>
           </span>
-          <span
+          <div id="dropzone">
+            <span
             class="upload"
             id="drop_zone"
             ondrop="dropHandler(event);"
@@ -194,6 +204,7 @@
             <label for="files" id="files">Browse Files</label>
             <p id="descp">PDF, JPG or WORD file should be less than 5mb</p>
           </span>
+          
           <span class="upload">
             <p class="uploadTitle">Upload Resume</p>
             <span
@@ -207,6 +218,9 @@
             <label for="files" id="files">Browse Files</label>
             <p id="descp">PDF, JPG or WORD file should be less than 5mb</p>
           </span>
+          </div>
+          
+          
         </div>
       </div>
     </main>
