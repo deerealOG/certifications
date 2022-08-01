@@ -119,7 +119,7 @@ body {
 }
 #container {
   position: absolute;
-  top: 80px;
+  top: 20px;
 }
 #files {
   background: #262262;
@@ -342,7 +342,7 @@ Animations
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding-right: 5vw;
   padding-left: 5vw;
   padding-bottom: 100px;
@@ -351,7 +351,7 @@ Animations
   position: absolute;
   width: 100vw;
   height: auto;
-  top: 120px;
+  top: 100px;
 }
 #smallContainer {
   display: flex;
@@ -383,7 +383,7 @@ Animations
 #category .desc ul {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 150%;
   color: #262262;
@@ -431,7 +431,7 @@ Animations
 #descp {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 150%;
   color: #262262;
@@ -538,126 +538,6 @@ aside {
       height: 100%;
     }
 
-    aside {
-      display: block;
-      position: fixed;
-      width: 200px;
-      height: 100vh;
-      left: 0px;
-      top: 0px;
-      background: rgba(38, 34, 98, 0.8);
-    }
-    #bigContainer {
-      position: fixed;
-      width: 200px;
-      height: auto;
-      left: 0px;
-      top: 120px;
-      display: flex;
-      flex-direction: column;
-      padding: 30px 0px;
-    }
-    #bigContainer span {
-      margin: 10px 0px;
-      transition: all 0.5s ease-in;
-    }
-    #smallContainer {
-      justify-self: center;
-      align-self: center;
-    }
-  }
-  #about {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-    width: 200px;
-    height: 40px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 140%;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  #about:hover {
-    background: #f8c097;
-  }
-  #expe {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-    width: 200px;
-    height: 40px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 140%;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  #expe:hover {
-    background: #f8c097;
-  }
-  #skill {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-    width: 200px;
-    height: 40px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 140%;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  #skill:hover {
-    background: #f8c097;
-  }
-  #cert {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-    width: 200px;
-    height: 40px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 140%;
-    color: #ffffff;
-    background: #f37821;
-  }
-  #contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-    width: 200px;
-    height: 40px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 140%;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  #contact:hover {
-    background: #f8c097;
-  }
 
   #category {
     display: flex;
@@ -668,7 +548,7 @@ aside {
 
     position: absolute;
     width: 100vw;
-    top: 160px;
+    top: 200px;
   }
   #category .title {
     justify-content: flex-start;
@@ -753,30 +633,7 @@ aside {
   .caret {
     display: flex;
   }
-  aside {
-    width: 300px;
-    position: fixed;
-    top: 0;
-  }
-  #bigContainer {
-    width: auto;
-    gap: 20px;
-  }
-  #bigContainer span {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 140%;
-    width: 300px;
-    padding: 20px;
-    margin-bottom: 10px;
-  }
-  #smallContainer {
-    justify-self: center;
-    align-self: center;
-  }
-
+  
   #category {
     position: absolute;
     width: 100vw;
@@ -793,7 +650,7 @@ aside {
   #category .desc {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 150%;
   }
@@ -817,7 +674,7 @@ aside {
   #descp {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 150%;
   }
@@ -829,12 +686,7 @@ aside {
   #navbar {
     position: fixed;
   }
-  aside {
-    width: 30vw;
-  }
-  #bigContainer span {
-    width: 30vw;
-  }
+ 
 }
 @media all and (min-width: 1400px) {
   #navbar {
