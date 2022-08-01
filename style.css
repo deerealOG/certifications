@@ -111,7 +111,7 @@ body {
   cursor: pointer;
 }
 #logo img {
-  height: 50px;
+  height: 3.375rem;
 }
 #avat {
   display: flex;
