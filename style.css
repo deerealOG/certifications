@@ -117,10 +117,7 @@ body {
   display: flex;
   align-items: center;
 }
-#container {
-  position: absolute;
-  top: 20px;
-}
+
 #files {
   background: #262262;
   padding: 10px 24px;
@@ -286,7 +283,7 @@ Animations
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 140%;
   color: #ffffff;
   background: #f37821;
@@ -345,10 +342,7 @@ Animations
   transform: rotate(180deg);
   transition: all .5s linear;
 }
-#container {
-  position: absolute;
-  top: -20px;
-}
+
 
 #category {
   display: flex;
@@ -363,7 +357,7 @@ Animations
   position: absolute;
   width: 100vw;
   height: auto;
-  top: 0px;
+  top: 180px;
 }
 #smallContainer {
   display: flex;
