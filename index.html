@@ -17,7 +17,7 @@
         $(document).on("click", function (e) {
           if ($(e.target).closest(".profileDropdown").length === 0) {
             $(".profileDropdown").hide();
-            $('.down').hideClass('rotate');
+            $('.down').removeClass('rotate');
             e.stopPropagation();
           }
         });
@@ -30,7 +30,7 @@
         $(document).on("click", function (e) {
           if ($(e.target).closest(".side-navcont").length === 0) {
             $(".side-navcont").hide();
-            $('.dropdown').hideClass('rotate');
+            $('.dropdown').removeClass('rotate');
             e.stopPropagation();
           }
         });
@@ -97,7 +97,7 @@
         <span
           class="iconify notification"
           data-icon="clarity:notification-outline-badged"
-          style="color: white; font-size: 24px"
+          style="color: white; font-size: 20px"
         ></span>
         <span id="username"> Divine</span>
         <span id="avat">
